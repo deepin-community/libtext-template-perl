@@ -1,0 +1,28 @@
+Source: libtext-template-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>,
+           Florian Schlichting <fsfs@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libtest-more-utf8-perl <!nocheck>,
+                     libtest-warnings-perl <!nocheck>,
+                     perl
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtext-template-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtext-template-perl.git
+Homepage: https://metacpan.org/release/Text-Template
+Rules-Requires-Root: no
+
+Package: libtext-template-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends}
+Multi-Arch: foreign
+Description: perl module to process text templates
+ Text::Template is a library for generating form letters, building
+ HTML pages, or filling in templates generally. A `template' is a
+ piece of text that has little Perl programs embedded in it here and
+ there. When you `fill in' a template, you evaluate the little
+ programs and replace them with their values.
